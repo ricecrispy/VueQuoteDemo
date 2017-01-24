@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Quotes Demo</title>
+  </head>
+  <body>
+    <div id="quotes-list">
+      <h1>Total Quote Counts: {{ counter }}</h1>
+      <ul>
+        <li is="topic-item"
+            v-for="(topic, index) in topics"
+            v-bind:topic="topic"
+            v-bind:title="index"></li>
+      </ul>
+
+
+      <button v-on:click="getQuote()">Get Quote</button>
+      <button v-on:click="ClearQuotes()">Clear Quotes</button>
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+    <script src="VueComp.js"></script>
+  </body>
+</html>

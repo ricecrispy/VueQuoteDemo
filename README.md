@@ -1,2 +1,2 @@
-# VueTwitterVisualization
-A Twitter Info Visualization App
+# VueQuoteDemo
+Basic api call demo with Vue. 
